@@ -15,6 +15,9 @@
 		8FCB813424752280000A0EB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FCB813224752280000A0EB9 /* LaunchScreen.storyboard */; };
 		8FCB813F24752281000A0EB9 /* MovizySwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCB813E24752281000A0EB9 /* MovizySwiftUITests.swift */; };
 		8FCB814A24752281000A0EB9 /* MovizySwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCB814924752281000A0EB9 /* MovizySwiftUIUITests.swift */; };
+		8FCB81592475250B000A0EB9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCB81582475250B000A0EB9 /* HomeView.swift */; };
+		8FCB815D24752649000A0EB9 /* MoviesHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCB815C24752649000A0EB9 /* MoviesHomeView.swift */; };
+		8FCB815F24752651000A0EB9 /* DiscoverHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCB815E24752651000A0EB9 /* DiscoverHomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		8FCB814524752281000A0EB9 /* MovizySwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovizySwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FCB814924752281000A0EB9 /* MovizySwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovizySwiftUIUITests.swift; sourceTree = "<group>"; };
 		8FCB814B24752281000A0EB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FCB81582475250B000A0EB9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		8FCB815C24752649000A0EB9 /* MoviesHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesHomeView.swift; sourceTree = "<group>"; };
+		8FCB815E24752651000A0EB9 /* DiscoverHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverHomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,9 @@
 		8FCB81262475227F000A0EB9 /* MovizySwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				8FCB815B24752638000A0EB9 /* Discover */,
+				8FCB815A24752632000A0EB9 /* Movies */,
+				8FCB815724752501000A0EB9 /* Home */,
 				8FCB81272475227F000A0EB9 /* AppDelegate.swift */,
 				8FCB81292475227F000A0EB9 /* SceneDelegate.swift */,
 				8FCB812B2475227F000A0EB9 /* ContentView.swift */,
@@ -134,6 +143,30 @@
 				8FCB814B24752281000A0EB9 /* Info.plist */,
 			);
 			path = MovizySwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		8FCB815724752501000A0EB9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8FCB81582475250B000A0EB9 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8FCB815A24752632000A0EB9 /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				8FCB815C24752649000A0EB9 /* MoviesHomeView.swift */,
+			);
+			path = Movies;
+			sourceTree = "<group>";
+		};
+		8FCB815B24752638000A0EB9 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				8FCB815E24752651000A0EB9 /* DiscoverHomeView.swift */,
+			);
+			path = Discover;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,7 +301,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FCB81282475227F000A0EB9 /* AppDelegate.swift in Sources */,
+				8FCB81592475250B000A0EB9 /* HomeView.swift in Sources */,
+				8FCB815F24752651000A0EB9 /* DiscoverHomeView.swift in Sources */,
 				8FCB812A2475227F000A0EB9 /* SceneDelegate.swift in Sources */,
+				8FCB815D24752649000A0EB9 /* MoviesHomeView.swift in Sources */,
 				8FCB812C2475227F000A0EB9 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
