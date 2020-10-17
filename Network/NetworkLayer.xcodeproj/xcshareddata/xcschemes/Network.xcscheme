@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8FBD0687253A64910039ADF2"
-               BuildableName = "NetworkLayer.framework"
-               BlueprintName = "NetworkLayer"
+               BuildableName = "NetworkLayerk.framework"
+               BlueprintName = "NetworkLayerk"
                ReferencedContainer = "container:NetworkLayer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8FBD0690253A64910039ADF2"
-               BuildableName = "NetworkLayerTests.xctest"
-               BlueprintName = "NetworkLayerTests"
+               BuildableName = "NetworkLayerkTests.xctest"
+               BlueprintName = "NetworkLayerkTests"
                ReferencedContainer = "container:NetworkLayer.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -61,8 +61,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8FBD0687253A64910039ADF2"
-            BuildableName = "NetworkLayer.framework"
-            BlueprintName = "NetworkLayer"
+            BuildableName = "NetworkLayerk.framework"
+            BlueprintName = "NetworkLayerk"
             ReferencedContainer = "container:NetworkLayer.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

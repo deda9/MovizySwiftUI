@@ -8,8 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		4443812426662DB9D15FF976 /* Pods_Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572748A8091828960C7CB262 /* Pods_Network.framework */; };
-		8FBD0692253A64910039ADF2 /* NetworkLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FBD0688253A64910039ADF2 /* NetworkLayer.framework */; };
+		8F50A343253B715D004C3657 /* MoviesAPIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F50A342253B715D004C3657 /* MoviesAPIs.swift */; };
+		8F50A362253B74BD004C3657 /* URLRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F50A361253B74BD004C3657 /* URLRequestBuilder.swift */; };
+		8F50A366253B74E0004C3657 /* Servers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F50A365253B74E0004C3657 /* Servers.swift */; };
+		8F50A36A253B74ED004C3657 /* AppEnvironement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F50A369253B74ED004C3657 /* AppEnvironement.swift */; };
+		8F50A36E253B76B8004C3657 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F50A36D253B76B8004C3657 /* Service.swift */; };
+		8F50A377253B7AAA004C3657 /* MoviesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F50A376253B7AAA004C3657 /* MoviesResponse.swift */; };
+		8F50A383253B7D83004C3657 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F50A382253B7D83004C3657 /* Endpoints.swift */; };
+		8FBD0692253A64910039ADF2 /* NetworkLayerk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FBD0688253A64910039ADF2 /* NetworkLayerk.framework */; };
 		8FBD0697253A64910039ADF2 /* NetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBD0696253A64910039ADF2 /* NetworkTests.swift */; };
+		8FBD06AA253A64AB0039ADF2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBD06A9253A64AB0039ADF2 /* Constants.swift */; };
 		F62E2D6EA080F8B087B7DDE0 /* Pods_Network_NetworkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EB069CDF7671AD906D76ACF /* Pods_Network_NetworkTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,11 +37,19 @@
 		1DB453E15959CB518881386C /* Pods-Network-NetworkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Network-NetworkTests.debug.xcconfig"; path = "Target Support Files/Pods-Network-NetworkTests/Pods-Network-NetworkTests.debug.xcconfig"; sourceTree = "<group>"; };
 		572748A8091828960C7CB262 /* Pods_Network.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Network.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A342FB3E1E71651264CE099 /* Pods-Network.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Network.release.xcconfig"; path = "Target Support Files/Pods-Network/Pods-Network.release.xcconfig"; sourceTree = "<group>"; };
-		8FBD0688253A64910039ADF2 /* NetworkLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F50A342253B715D004C3657 /* MoviesAPIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesAPIs.swift; sourceTree = "<group>"; };
+		8F50A361253B74BD004C3657 /* URLRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestBuilder.swift; sourceTree = "<group>"; };
+		8F50A365253B74E0004C3657 /* Servers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Servers.swift; sourceTree = "<group>"; };
+		8F50A369253B74ED004C3657 /* AppEnvironement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironement.swift; sourceTree = "<group>"; };
+		8F50A36D253B76B8004C3657 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		8F50A376253B7AAA004C3657 /* MoviesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesResponse.swift; sourceTree = "<group>"; };
+		8F50A382253B7D83004C3657 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		8FBD0688253A64910039ADF2 /* NetworkLayerk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkLayerk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FBD068C253A64910039ADF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8FBD0691253A64910039ADF2 /* NetworkLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FBD0691253A64910039ADF2 /* NetworkLayerkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkLayerkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FBD0696253A64910039ADF2 /* NetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTests.swift; sourceTree = "<group>"; };
 		8FBD0698253A64910039ADF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FBD06A9253A64AB0039ADF2 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C0B3A0A20114B11DF8098B0D /* Pods-Network-NetworkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Network-NetworkTests.release.xcconfig"; path = "Target Support Files/Pods-Network-NetworkTests/Pods-Network-NetworkTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FBD0692253A64910039ADF2 /* NetworkLayer.framework in Frameworks */,
+				8FBD0692253A64910039ADF2 /* NetworkLayerk.framework in Frameworks */,
 				F62E2D6EA080F8B087B7DDE0 /* Pods_Network_NetworkTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,6 +83,34 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8F50A373253B7A8A004C3657 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				8FBD06A9253A64AB0039ADF2 /* Constants.swift */,
+				8F50A365253B74E0004C3657 /* Servers.swift */,
+				8F50A369253B74ED004C3657 /* AppEnvironement.swift */,
+				8F50A361253B74BD004C3657 /* URLRequestBuilder.swift */,
+				8F50A36D253B76B8004C3657 /* Service.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		8F50A374253B7A90004C3657 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				8F50A376253B7AAA004C3657 /* MoviesResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		8F50A375253B7A95004C3657 /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				8F50A342253B715D004C3657 /* MoviesAPIs.swift */,
+			);
+			path = Movies;
+			sourceTree = "<group>";
+		};
 		8FBD067E253A64910039ADF2 = {
 			isa = PBXGroup;
 			children = (
@@ -81,8 +125,8 @@
 		8FBD0689253A64910039ADF2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8FBD0688253A64910039ADF2 /* NetworkLayer.framework */,
-				8FBD0691253A64910039ADF2 /* NetworkLayerTests.xctest */,
+				8FBD0688253A64910039ADF2 /* NetworkLayerk.framework */,
+				8FBD0691253A64910039ADF2 /* NetworkLayerkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,7 +134,11 @@
 		8FBD068A253A64910039ADF2 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				8F50A375253B7A95004C3657 /* Movies */,
+				8F50A374253B7A90004C3657 /* Response */,
+				8F50A373253B7A8A004C3657 /* Base */,
 				8FBD068C253A64910039ADF2 /* Info.plist */,
+				8F50A382253B7D83004C3657 /* Endpoints.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -129,9 +177,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		8FBD0687253A64910039ADF2 /* NetworkLayer */ = {
+		8FBD0687253A64910039ADF2 /* NetworkLayerk */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8FBD069C253A64910039ADF2 /* Build configuration list for PBXNativeTarget "NetworkLayer" */;
+			buildConfigurationList = 8FBD069C253A64910039ADF2 /* Build configuration list for PBXNativeTarget "NetworkLayerk" */;
 			buildPhases = (
 				5CC472CAE82A0B6C2D5E3034 /* [CP] Check Pods Manifest.lock */,
 				8FBD0683253A64910039ADF2 /* Headers */,
@@ -143,14 +191,14 @@
 			);
 			dependencies = (
 			);
-			name = NetworkLayer;
+			name = NetworkLayerk;
 			productName = Network;
-			productReference = 8FBD0688253A64910039ADF2 /* NetworkLayer.framework */;
+			productReference = 8FBD0688253A64910039ADF2 /* NetworkLayerk.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		8FBD0690253A64910039ADF2 /* NetworkLayerTests */ = {
+		8FBD0690253A64910039ADF2 /* NetworkLayerkTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8FBD069F253A64910039ADF2 /* Build configuration list for PBXNativeTarget "NetworkLayerTests" */;
+			buildConfigurationList = 8FBD069F253A64910039ADF2 /* Build configuration list for PBXNativeTarget "NetworkLayerkTests" */;
 			buildPhases = (
 				86BCFCA1BBD7417BE174E51E /* [CP] Check Pods Manifest.lock */,
 				8FBD068D253A64910039ADF2 /* Sources */,
@@ -163,9 +211,9 @@
 			dependencies = (
 				8FBD0694253A64910039ADF2 /* PBXTargetDependency */,
 			);
-			name = NetworkLayerTests;
+			name = NetworkLayerkTests;
 			productName = NetworkTests;
-			productReference = 8FBD0691253A64910039ADF2 /* NetworkLayerTests.xctest */;
+			productReference = 8FBD0691253A64910039ADF2 /* NetworkLayerkTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -198,8 +246,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8FBD0687253A64910039ADF2 /* NetworkLayer */,
-				8FBD0690253A64910039ADF2 /* NetworkLayerTests */,
+				8FBD0687253A64910039ADF2 /* NetworkLayerk */,
+				8FBD0690253A64910039ADF2 /* NetworkLayerkTests */,
 			);
 		};
 /* End PBXProject section */
@@ -290,6 +338,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F50A36A253B74ED004C3657 /* AppEnvironement.swift in Sources */,
+				8FBD06AA253A64AB0039ADF2 /* Constants.swift in Sources */,
+				8F50A343253B715D004C3657 /* MoviesAPIs.swift in Sources */,
+				8F50A377253B7AAA004C3657 /* MoviesResponse.swift in Sources */,
+				8F50A366253B74E0004C3657 /* Servers.swift in Sources */,
+				8F50A362253B74BD004C3657 /* URLRequestBuilder.swift in Sources */,
+				8F50A383253B7D83004C3657 /* Endpoints.swift in Sources */,
+				8F50A36E253B76B8004C3657 /* Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,7 +362,7 @@
 /* Begin PBXTargetDependency section */
 		8FBD0694253A64910039ADF2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8FBD0687253A64910039ADF2 /* NetworkLayer */;
+			target = 8FBD0687253A64910039ADF2 /* NetworkLayerk */;
 			targetProxy = 8FBD0693253A64910039ADF2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -486,6 +542,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1DB453E15959CB518881386C /* Pods-Network-NetworkTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NetworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -504,6 +561,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C0B3A0A20114B11DF8098B0D /* Pods-Network-NetworkTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NetworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -530,7 +588,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8FBD069C253A64910039ADF2 /* Build configuration list for PBXNativeTarget "NetworkLayer" */ = {
+		8FBD069C253A64910039ADF2 /* Build configuration list for PBXNativeTarget "NetworkLayerk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8FBD069D253A64910039ADF2 /* Debug */,
@@ -539,7 +597,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8FBD069F253A64910039ADF2 /* Build configuration list for PBXNativeTarget "NetworkLayerTests" */ = {
+		8FBD069F253A64910039ADF2 /* Build configuration list for PBXNativeTarget "NetworkLayerkTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8FBD06A0253A64910039ADF2 /* Debug */,
