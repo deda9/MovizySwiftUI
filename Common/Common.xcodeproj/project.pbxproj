@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8FBD06C3253A64C90039ADF2 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FBD06B9253A64C90039ADF2 /* Common.framework */; };
 		8FBD06C8253A64C90039ADF2 /* CommonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBD06C7253A64C90039ADF2 /* CommonTests.swift */; };
+		8FBD06D8253A64D50039ADF2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBD06D7253A64D50039ADF2 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +28,7 @@
 		8FBD06C2253A64C90039ADF2 /* CommonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FBD06C7253A64C90039ADF2 /* CommonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTests.swift; sourceTree = "<group>"; };
 		8FBD06C9253A64C90039ADF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FBD06D7253A64D50039ADF2 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 		8FBD06BB253A64C90039ADF2 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				8FBD06D7253A64D50039ADF2 /* Constants.swift */,
 				8FBD06BD253A64C90039ADF2 /* Info.plist */,
 			);
 			path = Common;
@@ -190,6 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FBD06D8253A64D50039ADF2 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +387,7 @@
 		8FBD06D1253A64C90039ADF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CommonTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -400,6 +405,7 @@
 		8FBD06D2253A64C90039ADF2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CommonTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
