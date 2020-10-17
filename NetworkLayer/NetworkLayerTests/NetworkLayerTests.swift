@@ -1,5 +1,5 @@
 //
-//  NetworkTests.swift
+//  NetworkLayerTests.swift
 //  NetworkTests
 //
 //  Created by Deda on 17.10.20.
@@ -8,7 +8,7 @@
 import XCTest
 @testable import NetworkLayer
 
-class NetworkTests: XCTestCase {
+class NetworkLayerTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

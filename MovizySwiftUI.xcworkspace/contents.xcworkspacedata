@@ -5,10 +5,10 @@
       location = "group:Common/Common.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:/Users/deda/Desktop/SwiftUI/MovizySwiftUI/Network/NetworkLayer.xcodeproj">
+      location = "group:Models/Models.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Models/Models.xcodeproj">
+      location = "group:NetworkLayer/NetworkLayer.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:MovizySwiftUI.xcodeproj">

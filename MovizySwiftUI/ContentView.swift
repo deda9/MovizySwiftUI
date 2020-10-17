@@ -6,11 +6,9 @@
 //
 
 import SwiftUI
-
-//import NetworkLayer
 import Models
 import Combine
-import NetworkLayerk
+import NetworkLayer
 
 struct ContentView: View {
     @ObservedObject var viewx = VIEWMOL()

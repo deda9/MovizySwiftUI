@@ -16,8 +16,8 @@ target 'MovizySwiftUI' do
   end
 end
 
-target 'Network' do project 'Network/Network'
+target 'NetworkLayer' do project 'NetworkLayer/NetworkLayer'
   network_pods
-  target :NetworkTests do
+  target :NetworkLayerTests do
   end
 end
