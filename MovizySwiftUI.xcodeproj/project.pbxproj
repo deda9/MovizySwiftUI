@@ -9,8 +9,12 @@
 /* Begin PBXBuildFile section */
 		22F29F26B294F207DB5D7F87 /* Pods_MovizySwiftUI_MovizySwiftUIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 678E6E75F53511E6AB505E8A /* Pods_MovizySwiftUI_MovizySwiftUIUITests.framework */; };
 		4C2DB5ABCFDE537830A5BE35 /* Pods_MovizySwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2461F6E6C73B3524728F7432 /* Pods_MovizySwiftUITests.framework */; };
+		8F91D57A253BAF7200E76E6B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F91D579253BAF7200E76E6B /* HomeView.swift */; };
+		8F91D582253BAF8F00E76E6B /* HomeTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F91D581253BAF8F00E76E6B /* HomeTabs.swift */; };
+		8F91D58A253BB1CA00E76E6B /* MoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F91D589253BB1CA00E76E6B /* MoviesView.swift */; };
+		8F91D592253BB1D300E76E6B /* TrailersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F91D591253BB1D300E76E6B /* TrailersView.swift */; };
+		8F91D597253BB1DA00E76E6B /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F91D596253BB1DA00E76E6B /* SearchView.swift */; };
 		8FBD05CD253A60670039ADF2 /* MovizySwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBD05CC253A60670039ADF2 /* MovizySwiftUIApp.swift */; };
-		8FBD05CF253A60670039ADF2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBD05CE253A60670039ADF2 /* ContentView.swift */; };
 		8FBD05D1253A60680039ADF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FBD05D0253A60680039ADF2 /* Assets.xcassets */; };
 		8FBD05D4253A60680039ADF2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FBD05D3253A60680039ADF2 /* Preview Assets.xcassets */; };
 		8FBD05DF253A60690039ADF2 /* MovizySwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBD05DE253A60690039ADF2 /* MovizySwiftUITests.swift */; };
@@ -45,11 +49,15 @@
 		7D070B1843D32ADDC39BA269 /* Pods-MovizySwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovizySwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-MovizySwiftUI/Pods-MovizySwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 		8F50A37C253B7BC2004C3657 /* Network.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Network.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F50A3E8253B803E004C3657 /* Models.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Models.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F91D579253BAF7200E76E6B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		8F91D581253BAF8F00E76E6B /* HomeTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabs.swift; sourceTree = "<group>"; };
+		8F91D589253BB1CA00E76E6B /* MoviesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesView.swift; sourceTree = "<group>"; };
+		8F91D591253BB1D300E76E6B /* TrailersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailersView.swift; sourceTree = "<group>"; };
+		8F91D596253BB1DA00E76E6B /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		8FA8945E253B84BF00383379 /* NetworkLayerk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkLayerk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FA89483253B850700383379 /* NetworkLayerk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkLayerk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FBD05C9253A60670039ADF2 /* MovizySwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovizySwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FBD05CC253A60670039ADF2 /* MovizySwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovizySwiftUIApp.swift; sourceTree = "<group>"; };
-		8FBD05CE253A60670039ADF2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8FBD05D0253A60680039ADF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8FBD05D3253A60680039ADF2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8FBD05D5253A60680039ADF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -120,6 +128,39 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8F91D578253BAF6900E76E6B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8F91D579253BAF7200E76E6B /* HomeView.swift */,
+				8F91D581253BAF8F00E76E6B /* HomeTabs.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8F91D586253BB19A00E76E6B /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				8F91D596253BB1DA00E76E6B /* SearchView.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		8F91D587253BB1AC00E76E6B /* Trailers */ = {
+			isa = PBXGroup;
+			children = (
+				8F91D591253BB1D300E76E6B /* TrailersView.swift */,
+			);
+			path = Trailers;
+			sourceTree = "<group>";
+		};
+		8F91D588253BB1B900E76E6B /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				8F91D589253BB1CA00E76E6B /* MoviesView.swift */,
+			);
+			path = Movies;
+			sourceTree = "<group>";
+		};
 		8FBD05C0253A60670039ADF2 = {
 			isa = PBXGroup;
 			children = (
@@ -145,9 +186,12 @@
 		8FBD05CB253A60670039ADF2 /* MovizySwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				8F91D588253BB1B900E76E6B /* Movies */,
+				8F91D587253BB1AC00E76E6B /* Trailers */,
+				8F91D586253BB19A00E76E6B /* Search */,
+				8F91D578253BAF6900E76E6B /* Home */,
 				8FBD060B253A60E50039ADF2 /* Base */,
 				8FBD05CC253A60670039ADF2 /* MovizySwiftUIApp.swift */,
-				8FBD05CE253A60670039ADF2 /* ContentView.swift */,
 				8FBD05D0253A60680039ADF2 /* Assets.xcassets */,
 				8FBD05D5253A60680039ADF2 /* Info.plist */,
 				8FBD05D2253A60680039ADF2 /* Preview Content */,
@@ -426,7 +470,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FBD05CF253A60670039ADF2 /* ContentView.swift in Sources */,
+				8F91D592253BB1D300E76E6B /* TrailersView.swift in Sources */,
+				8F91D58A253BB1CA00E76E6B /* MoviesView.swift in Sources */,
+				8F91D582253BAF8F00E76E6B /* HomeTabs.swift in Sources */,
+				8F91D597253BB1DA00E76E6B /* SearchView.swift in Sources */,
+				8F91D57A253BAF7200E76E6B /* HomeView.swift in Sources */,
 				8FBD05CD253A60670039ADF2 /* MovizySwiftUIApp.swift in Sources */,
 				8FBD060D253A60F80039ADF2 /* Constants.swift in Sources */,
 			);

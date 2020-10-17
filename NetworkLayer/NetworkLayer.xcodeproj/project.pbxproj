@@ -147,8 +147,8 @@
 				8F50A375253B7A95004C3657 /* Movies */,
 				8F50A374253B7A90004C3657 /* Response */,
 				8F50A373253B7A8A004C3657 /* Base */,
-				8FBD068C253A64910039ADF2 /* Info.plist */,
 				8F50A382253B7D83004C3657 /* Endpoints.swift */,
+				8FBD068C253A64910039ADF2 /* Info.plist */,
 			);
 			path = NetworkLayer;
 			sourceTree = "<group>";
