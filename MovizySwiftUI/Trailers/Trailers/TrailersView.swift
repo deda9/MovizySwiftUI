@@ -7,8 +7,10 @@
 
 import SwiftUI
 
-struct TrailersView: View {
-    var body: some View {
+public struct TrailersView: View {
+    public init() {}
+    
+    public var body: some View {
         Text("Trailer")
     }
 }

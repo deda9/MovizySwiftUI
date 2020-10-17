@@ -11,6 +11,15 @@
       location = "group:NetworkLayer/NetworkLayer.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:MovizySwiftUI/Trailers/Trailers.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:MovizySwiftUI/Search/Search.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:MovizySwiftUI/Movies/Movies.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:MovizySwiftUI.xcodeproj">
    </FileRef>
    <FileRef

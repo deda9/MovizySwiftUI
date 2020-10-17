@@ -7,8 +7,11 @@
 
 import SwiftUI
 
-struct MoviesView: View {
-    var body: some View {
+public struct MoviesView: View {
+    
+    public init() {}
+    
+    public var body: some View {
         Text("Movies")
     }
 }

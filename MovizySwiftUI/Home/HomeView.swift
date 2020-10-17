@@ -1,11 +1,7 @@
-//
-//  HomeView.swift
-//  MovizySwiftUI
-//
-//  Created by Deda on 18.10.20.
-//
-
 import SwiftUI
+import Movies
+import Search
+import Trailers
 
 struct HomeView: View {
     @State private var selectedTab = HomeTabs.home

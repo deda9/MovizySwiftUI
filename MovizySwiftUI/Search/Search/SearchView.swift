@@ -7,8 +7,11 @@
 
 import SwiftUI
 
-struct SearchView: View {
-    var body: some View {
+public struct SearchView: View {
+    
+    public init() {}
+    
+    public var body: some View {
         Text("Search")
     }
 }
