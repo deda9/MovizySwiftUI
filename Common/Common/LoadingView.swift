@@ -23,7 +23,9 @@ public struct LoadingView<Content>: View where Content: View {
                 }
             }
             .frame(width: geometry.size.width, height: geometry.size.height)
-            .background(Color.black.opacity(0.5))
+            .background(Color.black.opacity(0.3))
         }
+        .edgesIgnoringSafeArea(.all)
+        
     }
 }
