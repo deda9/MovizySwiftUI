@@ -8,7 +8,7 @@ struct HomeView: View {
     
     var body: some View {
         TabView(selection: $selectedTab) {
-            MoviesView().tabItem { HomeTabs.home.view }.tag(HomeTabs.home)
+            MoviesView(viewModel: MoviesViewModel()).tabItem { HomeTabs.home.view }.tag(HomeTabs.home)
             SearchView().tabItem { HomeTabs.search.view }.tag(HomeTabs.search)
             TrailersView().tabItem { HomeTabs.trailers.view }.tag(HomeTabs.trailers)
         }

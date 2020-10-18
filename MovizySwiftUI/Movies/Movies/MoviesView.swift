@@ -6,18 +6,31 @@
 //
 
 import SwiftUI
+import Common
 
-public struct MoviesView: View {
+public struct MoviesView<ViewModel>: View where ViewModel: MoviesViewModelProtocol {
     
-    public init() {}
+    @ObservedObject var viewModel: ViewModel
+    
+    public init(viewModel: ViewModel) {
+        self.viewModel = viewModel
+    }
     
     public var body: some View {
-        Text("Movies")
+        if viewModel.inputs.isLoading {
+            LoadingView {
+                Text(Translations.moviesLoadingText)
+            }
+        } else {
+            List(viewModel.inputs.movies) { movie in
+                Text(movie.getTitle())
+            }
+        }
     }
 }
 
 struct MoviesView_Previews: PreviewProvider {
     static var previews: some View {
-        MoviesView()
+        MoviesView(viewModel: MoviesViewModel())
     }
 }
