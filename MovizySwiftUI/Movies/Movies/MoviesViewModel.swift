@@ -21,14 +21,17 @@ public final class MoviesViewModel: MoviesViewModelProtocol, MoviesViewModelInpu
     
     @Published public var loadingState: MoviesLoadingState = .loading
     
-    var bag: [AnyCancellable] = []
+    private var networkService: NetworkServiceProtocol!
+    private var bag: [AnyCancellable] = []
+    
     let page = 1
     
     public var inputs: MoviesViewModelInputs {
         return self
     }
     
-    public init() {
+    public init(networkService: NetworkServiceProtocol) {
+        self.networkService = networkService
         self.fetchMovies()
     }
     
@@ -36,7 +39,7 @@ public final class MoviesViewModel: MoviesViewModelProtocol, MoviesViewModelInpu
         self.loadingState = .loading
         
         let request =
-            NetworkService<MoviesResponse>.execute(Endpoints.getPopularList(page).resolve()) { [weak self] result in
+            self.networkService.execute(Endpoints.getPopularList(page).resolve(), model: MoviesResponse.self) { [weak self] result in
                 guard let self = self else { return }
                 switch result {
                 case .success(let moviesResponse):

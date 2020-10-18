@@ -32,9 +32,3 @@ public struct MoviesView<ViewModel>: View where ViewModel: MoviesViewModelProtoc
         }
     }
 }
-
-struct MoviesView_Previews: PreviewProvider {
-    static var previews: some View {
-        MoviesView(viewModel: MoviesViewModel())
-    }
-}
