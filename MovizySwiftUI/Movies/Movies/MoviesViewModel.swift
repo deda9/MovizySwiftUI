@@ -3,16 +3,14 @@ import NetworkLayer
 import Combine
 import Foundation
 
-public protocol MoviesViewModelInputs {
-    var movies: [Movie] { get }
-    var errorMessage: String? { get }
-    var isLoading: Bool { get }
+public enum MoviesLoadingState {
+    case loading
+    case finished(movies: [Movie])
+    case error(message: String)
 }
 
-enum MoviesLoadingState {
-    case loading
-    case finished
-    case error
+public protocol MoviesViewModelInputs {
+    var loadingState: MoviesLoadingState { get }
 }
 
 public protocol MoviesViewModelProtocol: ObservableObject {
@@ -21,9 +19,7 @@ public protocol MoviesViewModelProtocol: ObservableObject {
 
 public final class MoviesViewModel: MoviesViewModelProtocol, MoviesViewModelInputs {
     
-    @Published public var movies: [Movie] = []
-    @Published public var errorMessage: String?
-    @Published public var isLoading: Bool = false
+    @Published public var loadingState: MoviesLoadingState = .loading
     
     var bag: [AnyCancellable] = []
     let page = 1
@@ -33,23 +29,21 @@ public final class MoviesViewModel: MoviesViewModelProtocol, MoviesViewModelInpu
     }
     
     public init() {
-            self.fetchMovies()
+        self.fetchMovies()
     }
     
     private func fetchMovies() {
-        self.isLoading = true
+        self.loadingState = .loading
         
         let request =
             NetworkService<MoviesResponse>.execute(Endpoints.getPopularList(page).resolve()) { [weak self] result in
                 guard let self = self else { return }
                 switch result {
                 case .success(let moviesResponse):
-                    self.isLoading = false
-                    self.movies = moviesResponse.getMovies()
+                    self.loadingState = .finished(movies: moviesResponse.getMovies())
                     
                 case .failure(let error):
-                    self.isLoading = false
-                    self.errorMessage = error.errorDescription
+                    self.loadingState = .error(message: error.localizedDescription)
                 }
             }
         request.store(in: &bag)

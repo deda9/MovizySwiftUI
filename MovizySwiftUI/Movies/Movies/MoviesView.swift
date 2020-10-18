@@ -17,14 +17,18 @@ public struct MoviesView<ViewModel>: View where ViewModel: MoviesViewModelProtoc
     }
     
     public var body: some View {
-        if viewModel.inputs.isLoading {
+        switch viewModel.inputs.loadingState {
+        case .loading:
             LoadingView {
                 Text(Translations.moviesLoadingText)
             }
-        } else {
-            List(viewModel.inputs.movies) { movie in
+            
+        case .finished(let movies):
+            List(movies) { movie in
                 Text(movie.getTitle())
             }
+        case .error(let message):
+            Text(message)
         }
     }
 }
