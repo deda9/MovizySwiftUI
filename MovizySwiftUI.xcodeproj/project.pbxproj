@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		22F29F26B294F207DB5D7F87 /* Pods_MovizySwiftUI_MovizySwiftUIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 678E6E75F53511E6AB505E8A /* Pods_MovizySwiftUI_MovizySwiftUIUITests.framework */; };
 		4C2DB5ABCFDE537830A5BE35 /* Pods_MovizySwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2461F6E6C73B3524728F7432 /* Pods_MovizySwiftUITests.framework */; };
+		8F4BA06F253CC07400F6BC2E /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4BA06E253CC07400F6BC2E /* AppCoordinator.swift */; };
+		8F4BA073253CC07A00F6BC2E /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4BA072253CC07A00F6BC2E /* HomeCoordinator.swift */; };
 		8F611B56253BB8E400F6A281 /* Movies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F611B55253BB8E400F6A281 /* Movies.framework */; };
 		8F611B57253BB8E400F6A281 /* Movies.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8F611B55253BB8E400F6A281 /* Movies.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8F611B5A253BB8EB00F6A281 /* Search.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F611B59253BB8EB00F6A281 /* Search.framework */; };
@@ -65,6 +67,8 @@
 		577AEE9F297E15F07FC0C4E9 /* Pods_MovizySwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovizySwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		678E6E75F53511E6AB505E8A /* Pods_MovizySwiftUI_MovizySwiftUIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovizySwiftUI_MovizySwiftUIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D070B1843D32ADDC39BA269 /* Pods-MovizySwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovizySwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-MovizySwiftUI/Pods-MovizySwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
+		8F4BA06E253CC07400F6BC2E /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		8F4BA072253CC07A00F6BC2E /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		8F50A37C253B7BC2004C3657 /* Network.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Network.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F50A3E8253B803E004C3657 /* Models.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Models.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F611B55253BB8E400F6A281 /* Movies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Movies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,6 +155,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8F4BA06D253CC05300F6BC2E /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				8F4BA06E253CC07400F6BC2E /* AppCoordinator.swift */,
+				8F4BA072253CC07A00F6BC2E /* HomeCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
 		8F91D578253BAF6900E76E6B /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +198,7 @@
 		8FBD05CB253A60670039ADF2 /* MovizySwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				8F4BA06D253CC05300F6BC2E /* Coordinators */,
 				8F91D578253BAF6900E76E6B /* Home */,
 				8FBD05CC253A60670039ADF2 /* MovizySwiftUIApp.swift */,
 				8FBD05D0253A60680039ADF2 /* Assets.xcassets */,
@@ -458,7 +472,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F4BA06F253CC07400F6BC2E /* AppCoordinator.swift in Sources */,
 				8F91D582253BAF8F00E76E6B /* HomeTabs.swift in Sources */,
+				8F4BA073253CC07A00F6BC2E /* HomeCoordinator.swift in Sources */,
 				8F91D57A253BAF7200E76E6B /* HomeView.swift in Sources */,
 				8FBD05CD253A60670039ADF2 /* MovizySwiftUIApp.swift in Sources */,
 			);

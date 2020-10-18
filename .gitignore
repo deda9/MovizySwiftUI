@@ -1,0 +1,17 @@
+.DS_Store
+*.app.dSYM.zip
+build/
+*.xcuserdatad
+xcuserdata
+Pods/
+*.ipa
+*.xcuserstate
+*.xcworkspace/xcuserdata/*.xcuserdatad/
+*/*.xcodeproj/xcuserdata/
+shared_derived_data/
+fastlane/test_output/
+fastlane/report.xml
+.bundle/
+vendor/
+temp_dd/
+.idea

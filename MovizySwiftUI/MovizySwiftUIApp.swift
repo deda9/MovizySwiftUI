@@ -1,17 +1,15 @@
-//
-//  MovizySwiftUIApp.swift
-//  MovizySwiftUI
-//
-//  Created by Deda on 17.10.20.
-//
-
 import SwiftUI
+import Coordinator
 
 @main
 struct MovizySwiftUIApp: App {
+    
+    private let coordinator = AppCoordinator()
+    
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            return coordinator.route(to: .home)
         }
     }
 }
+
