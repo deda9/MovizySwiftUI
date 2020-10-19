@@ -4,6 +4,7 @@ workspace 'MovizySwiftUI'
 
 def network_pods
     pod 'Alamofire'
+    pod 'Kingfisher'
 end
 
 target 'MovizySwiftUI' do
@@ -43,3 +44,13 @@ target 'Movies' do project 'MovizySwiftUI/Movies/Movies'
   target :MoviesTests do
   end
 end
+
+target 'Common' do project 'Common/Common'
+  pod 'Kingfisher'
+  target :CommonTests do
+  end
+end
+
+
+
+

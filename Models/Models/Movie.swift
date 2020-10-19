@@ -2,18 +2,18 @@ import Common
 
 public struct Movie: Codable, Identifiable {
     public let id: Int
-    let voteCount: Int
-    let video: Bool
-    let voteAverage: Double
-    let title: String
-    let popularity: Double
-    let posterPath, originalTitle: String?
-    let originalLanguage: String?
-    let genreIDS: [Int]
-    let backdropPath: String?
-    let adult: Bool
-    let overview, releaseDate: String
-    var imageUrl: String? {
+    public let voteCount: Int
+    public let video: Bool
+    public let voteAverage: Double
+    public let title: String
+    public let popularity: Double
+    public let posterPath, originalTitle: String?
+    public let originalLanguage: String?
+    public let genreIDS: [Int]
+    public let backdropPath: String?
+    public let adult: Bool
+    public let overview, releaseDate: String
+    public var imageUrl: String? {
         return Path.Movies.imageBaseUrl + (self.posterPath ?? "")
     }
     
@@ -29,9 +29,5 @@ public struct Movie: Codable, Identifiable {
         case backdropPath = "backdrop_path"
         case adult, overview
         case releaseDate = "release_date"
-    }
-    
-    public func getTitle() -> String {
-        return originalTitle ?? "NON"
     }
 }

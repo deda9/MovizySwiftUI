@@ -13,13 +13,25 @@ extension HomeCoordinating {
         case .movies:
             let networkService = NetworkService.default
             let viewModel = MoviesViewModel(networkService: networkService)
-            return AnyView(MoviesView(viewModel: viewModel))
+            return AnyView(
+                MoviesView(viewModel: viewModel)
+                    .withNavigation(title: HomeTabs.home.title))
         case .search:
-            return AnyView(SearchView())
+            return AnyView(SearchView()
+                            .withNavigation(title: HomeTabs.search.title))
         case .trailer:
-            return AnyView(TrailersView())
+            return AnyView(TrailersView()
+                            .withNavigation(title: HomeTabs.trailers.title))
         }
     }
 }
 
 class HomeCoordinator: HomeCoordinating {}
+
+extension View {
+    func withNavigation(title: String) -> some View {
+        NavigationView {
+            self.navigationBarTitle(title)
+        }
+    }
+}

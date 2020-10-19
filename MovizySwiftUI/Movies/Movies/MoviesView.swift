@@ -25,7 +25,7 @@ public struct MoviesView<ViewModel>: View where ViewModel: MoviesViewModelProtoc
             
         case .finished(let movies):
             List(movies) { movie in
-                Text(movie.getTitle())
+                MovieRow(movie: movie)
             }
         case .error(let message):
             Text(message)
