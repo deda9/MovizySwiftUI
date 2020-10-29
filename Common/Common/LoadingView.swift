@@ -1,10 +1,3 @@
-//
-//  LoadingView.swift
-//  Common
-//
-//  Created by Deda on 18.10.20.
-//
-
 import SwiftUI
 
 public struct LoadingView<Content>: View where Content: View {
@@ -26,6 +19,5 @@ public struct LoadingView<Content>: View where Content: View {
             .background(Color.black.opacity(0.3))
         }
         .edgesIgnoringSafeArea(.all)
-        
     }
 }

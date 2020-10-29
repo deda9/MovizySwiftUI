@@ -2,24 +2,19 @@ import Models
 import NetworkLayer
 import Combine
 import Foundation
-
-public enum MoviesLoadingState {
-    case loading
-    case finished(movies: [Movie])
-    case error(message: String)
-}
+import Common
 
 public protocol MoviesViewModelInputs {
-    var loadingState: MoviesLoadingState { get }
+    var state: LoadingState<[Movie]> { get }
 }
 
-public protocol MoviesViewModelProtocol: ObservableObject {
+public protocol MoviesViewModelProtocol: LoadableObject where Output == [Movie] {
     var inputs: MoviesViewModelInputs { get }
 }
 
 public final class MoviesViewModel: MoviesViewModelProtocol, MoviesViewModelInputs {
     
-    @Published public var loadingState: MoviesLoadingState = .loading
+    @Published public var state: LoadingState<[Movie]> = .loading
     
     private var networkService: NetworkServiceProtocol!
     private var bag: [AnyCancellable] = []
@@ -30,25 +25,23 @@ public final class MoviesViewModel: MoviesViewModelProtocol, MoviesViewModelInpu
         return self
     }
     
+    var bar: [AnyCancellable] = []
     public init(networkService: NetworkServiceProtocol) {
         self.networkService = networkService
-        self.fetchMovies()
     }
     
-    private func fetchMovies() {
-        self.loadingState = .loading
-        
-        let request =
-            self.networkService.execute(Endpoints.getPopularList(page).resolve(), model: MoviesResponse.self) { [weak self] result in
+    public func load() {
+        self.state = .loading
+        self.networkService
+            .execute(Endpoints.getPopularList(page).resolve(), model: MoviesResponse.self) { [weak self] result in
                 guard let self = self else { return }
                 switch result {
                 case .success(let moviesResponse):
-                    self.loadingState = .finished(movies: moviesResponse.getMovies())
+                    self.state = .loaded(moviesResponse.getMovies())
                     
                 case .failure(let error):
-                    self.loadingState = .error(message: error.localizedDescription)
+                    self.state = .failed(error.localizedDescription)
                 }
-            }
-        request.store(in: &bag)
+            }.store(in: &bag)
     }
 }

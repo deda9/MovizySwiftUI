@@ -3,7 +3,7 @@ import Common
 
 struct MoviePosterView: View {
     
-    @ObservedObject var imageDownloader: ImageDownloader
+    @StateObject var imageDownloader: ImageDownloader
     let size: PosterStyle.Size
     
     var body: some View {

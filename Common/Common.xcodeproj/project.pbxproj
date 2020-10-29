@@ -15,6 +15,7 @@
 		8FBD06C3253A64C90039ADF2 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FBD06B9253A64C90039ADF2 /* Common.framework */; };
 		8FBD06C8253A64C90039ADF2 /* CommonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBD06C7253A64C90039ADF2 /* CommonTests.swift */; };
 		8FBD06D8253A64D50039ADF2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBD06D7253A64D50039ADF2 /* Constants.swift */; };
+		8FF23524254B318900C916C1 /* AsyncListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF23523254B318900C916C1 /* AsyncListView.swift */; };
 		F5EBEF07F0A344A70A8F8A61 /* Pods_Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 651052BD651B5C19640CFA49 /* Pods_Common.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		8FBD06C7253A64C90039ADF2 /* CommonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTests.swift; sourceTree = "<group>"; };
 		8FBD06C9253A64C90039ADF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FBD06D7253A64D50039ADF2 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8FF23523254B318900C916C1 /* AsyncListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncListView.swift; sourceTree = "<group>"; };
 		C1B4EC462019C03C6DDF471E /* Pods-Common.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Common.debug.xcconfig"; path = "Target Support Files/Pods-Common/Pods-Common.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +105,7 @@
 			children = (
 				8FBD06D7253A64D50039ADF2 /* Constants.swift */,
 				8F21520B253C7BCC00FE6314 /* LoadingView.swift */,
+				8FF23523254B318900C916C1 /* AsyncListView.swift */,
 				8F6975FF253E08730031DF3A /* ImageDownloader.swift */,
 				8F215219253C826F00FE6314 /* Translations.swift */,
 				8F21523B253C87B300FE6314 /* Localizable.strings */,
@@ -311,6 +314,7 @@
 				8F21521A253C826F00FE6314 /* Translations.swift in Sources */,
 				8F697600253E08730031DF3A /* ImageDownloader.swift in Sources */,
 				8F21520C253C7BCC00FE6314 /* LoadingView.swift in Sources */,
+				8FF23524254B318900C916C1 /* AsyncListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

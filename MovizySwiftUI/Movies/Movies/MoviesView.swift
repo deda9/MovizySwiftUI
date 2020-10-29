@@ -17,18 +17,10 @@ public struct MoviesView<ViewModel>: View where ViewModel: MoviesViewModelProtoc
     }
     
     public var body: some View {
-        switch viewModel.inputs.loadingState {
-        case .loading:
-            LoadingView {
-                Text(Translations.moviesLoadingText)
-            }
-            
-        case .finished(let movies):
+        AsyncListView(source: viewModel) { movies in
             List(movies) { movie in
-                MovieRow(movie: movie)
+                MovieCard(movie: movie)
             }
-        case .error(let message):
-            Text(message)
         }
     }
 }
