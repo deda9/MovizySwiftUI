@@ -18,17 +18,23 @@ public struct MoviesView<ViewModel>: View where ViewModel: MoviesViewModelProtoc
     }
     
     public var body: some View {
-        AsyncListView(source: viewModel, placeholder: Placeholder(), content: Contentview.init)
+        AsyncListView(source: viewModel, placeholder: Placeholder()) {
+            Contentview(movies: $0, loadMore: viewModel.load)
+        }
     }
 }
 
 extension MoviesView {
     struct Contentview: View {
         var movies: [Movie]
+        var loadMore: () -> Void
         
         var body: some View {
-            List(movies) { movie in
-                MovieCard(movie: movie)
+            List {
+                ForEach(movies, id: \.self) { movie in
+                    MovieCard(movie: movie)
+                }
+                ProgressView().onAppear(perform: loadMore)
             }
         }
     }

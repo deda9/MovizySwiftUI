@@ -1,6 +1,6 @@
 import Common
 
-public struct Movie: Codable, Identifiable {
+public struct Movie: Codable, Identifiable, Hashable {
     public let id: Int
     public let voteCount: Int
     public let video: Bool

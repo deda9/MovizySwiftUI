@@ -2,6 +2,7 @@ import SwiftUI
 
 public enum LoadingState<Value> {
     case loading
+    case loadMore(Value)
     case loaded(Value)
     case failed(String)
 }
@@ -10,6 +11,12 @@ public protocol LoadableObject: ObservableObject {
     associatedtype Output
     var state: LoadingState<Output> { get }
     func load()
+}
+
+public protocol Pager {
+    var isLoadingMore: Bool { get }
+    var canLoadMore: Bool { get }
+    var currentPage: Int { get }
 }
 
 public struct AsyncListView<Source: LoadableObject, Placeholder: View, Content: View>: View {
@@ -30,7 +37,8 @@ public struct AsyncListView<Source: LoadableObject, Placeholder: View, Content: 
             placeholder.onAppear(perform: source.load)
         case .failed(let error):
             Text(error)
-        case .loaded(let output):
+        case .loaded(let output),
+             .loadMore(let output):
             content(output)
         }
     }
