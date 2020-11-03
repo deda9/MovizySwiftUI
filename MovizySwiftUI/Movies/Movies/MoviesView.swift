@@ -19,7 +19,7 @@ public struct MoviesView<ViewModel>: View where ViewModel: MoviesViewModelProtoc
     
     public var body: some View {
         AsyncListView(source: viewModel, placeholder: Placeholder()) {
-            Contentview(movies: $0, loadMore: viewModel.load)
+            MovieCard(movie: $0)
         }
     }
 }
